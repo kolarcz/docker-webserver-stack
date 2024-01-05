@@ -1,5 +1,4 @@
-# Docker Webserver Stack
-Docker with Nginx proxy + Lets Encrypt Certbot + PHP + MariaDB + NodeJS app + external app
+# Docker Webserver Stack with Nginx proxy + PHP + MariaDB + NodeJS app + external app + Lets Encrypt Certbot
 
 Host | Target
 --- | ---
