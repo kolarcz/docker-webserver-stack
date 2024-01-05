@@ -5,8 +5,8 @@ Host | Target
 localhost | PHP: /home/php/src/localhost/_/
 mujweb1.cz | PHP: /home/php/src/mujweb1.cz/_/
 www.mujweb1.cz | PHP: /home/php/src/mujweb1.cz/www/
-nodejsappka.mujweb2.cz | Container "nodejsappka" (NodeJS app)
-homeassistant.mujweb2.cz | App running on local machine at port 8123
+nodejsappka.mujweb2.cz | NodeJS app as container "nodejsappka"
+homeassistant.mujweb2.cz | External app running on local machine at port 8123
 ```
 cd /home
 docker-compose up # -d
