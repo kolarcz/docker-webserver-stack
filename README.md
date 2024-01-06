@@ -24,8 +24,8 @@ exit
 
 ## Setting up HTTPS:
 Un/comment:
-- [./home/docker-compose.yml](): **lines 16-22**
-- [./home/nginx/nginx.conf](): **lines 14, 16-22, 39-56**
+- [./home/docker-compose.yml](./home/docker-compose.yml): **lines 16-22**
+- [./home/nginx/nginx.conf](./home/nginx/nginx.conf): **lines 14, 16-22, 39-56**
 ```
 chmod -R 755 /home/certbot
 docker-compose up -d # for the first time comment "HTTPS" section in nginx.conf
