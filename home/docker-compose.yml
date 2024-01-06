@@ -12,13 +12,14 @@ services:
     ports:
       - 80:80
       - 443:443
-  certbot:
-    container_name: certbot
-    image: certbot/certbot:latest
-    volumes:
-      - ./certbot/www/:/var/www/certbot/:rw
-      - ./certbot/conf/:/etc/letsencrypt/:rw
-    # TODO: entrypoint: "/bin/sh -c 'while :; do sleep 24h; certbot renew; done'"
+  ## CERTBOT FOR HTTPS:
+  # certbot:
+  #   container_name: certbot
+  #   image: certbot/certbot:latest
+  #   volumes:
+  #     - ./certbot/www/:/var/www/certbot/:rw
+  #     - ./certbot/conf/:/etc/letsencrypt/:rw
+  #   # TODO: entrypoint: "/bin/sh -c 'while :; do sleep 24h; certbot renew; done'"
   ## NODEJS APP:
   # nodejsappka:
   #   container_name: nodejsappka

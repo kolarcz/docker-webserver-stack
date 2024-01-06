@@ -3,7 +3,7 @@
 
 Host | Target
 --- | ---
-localhost | PHP: /home/php/src/localhost/_/
+localhost | PHP: /home/php/src/_.localhost/_/
 mujweb1.cz | PHP: /home/php/src/mujweb1.cz/_/
 www.mujweb1.cz | PHP: /home/php/src/mujweb1.cz/www/
 nodejsappka.mujweb2.cz | NodeJS app as container "nodejsappka"
@@ -23,6 +23,9 @@ exit
 ```
 
 ## Setting up HTTPS:
+Un/comment:
+- [./home/docker-compose.yml](): **lines 16-22**
+- [./home/nginx/nginx.conf](): **lines 14, 16-22, 39-56**
 ```
 chmod -R 755 /home/certbot
 docker-compose up -d # for the first time comment "HTTPS" section in nginx.conf
