@@ -9,7 +9,7 @@ www.mujweb1.cz | PHP: /home/php/src/mujweb1.cz/www/
 nodejsappka.mujweb2.cz | NodeJS app as container "nodejsappka"
 homeassistant.mujweb2.cz | External app running on local machine at port 8123
 ```
-cd /home
+cd home
 docker-compose up # -d
 ```
 
