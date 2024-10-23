@@ -1,14 +1,16 @@
 FROM php:8.0-apache
 
-RUN docker-php-ext-install mysqli
-
 RUN apt update && apt install -y --no-install-recommends \
         libfreetype6-dev \
         libjpeg62-turbo-dev \
         libwebp-dev \
-        libpng-dev
+        libpng-dev \
+        zlib1g-dev \
+        libzip-dev \
+        libicu-dev
+
 RUN docker-php-ext-configure gd --with-freetype --with-webp --with-jpeg && \
-    docker-php-ext-install gd
+    docker-php-ext-install gd zip intl mysqli pdo_mysql
 
 RUN a2enmod rewrite
 RUN a2enmod vhost_alias
